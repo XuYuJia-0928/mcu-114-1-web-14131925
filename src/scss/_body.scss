@@ -11,8 +11,12 @@ div.main {
   }
 
   aside {
+    display: var(--aside-display);
     width: 20%;
     flex-shrink: 0;
+
+    position: sticky;
+    top: 6rem;
 
     h3 {
       margin: 0;
@@ -44,7 +48,6 @@ div.main {
   }
 
   main {
-    outline: solid 1px blue;
     flex: 1 1 0%;
 
     h1 {
@@ -69,7 +72,7 @@ div.main {
         font-size: 0.875rem;
         line-height: 1.25rem;
         color: var(--text-color);
-        background-color: rgb(from var(--border-color) r g b/0.5);
+        background-color: rgb(from var(--border-color) r g b / 0.5);
         border-radius: 1.5rem;
         cursor: pointer;
 
@@ -82,7 +85,7 @@ div.main {
 
     div.books {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(var(--book-min-width), 1fr));
       row-gap: 2.5rem;
       column-gap: 1.5rem;
 
