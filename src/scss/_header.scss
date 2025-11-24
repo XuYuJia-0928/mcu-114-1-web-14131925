@@ -1,5 +1,9 @@
 header {
   border-bottom: solid 1px var(--border-color);
+  background-color: var(--background=color);
+  position: sticky;
+  top: 0;
+  z-index: 50;
 
   h3 {
     margin: 0px;
@@ -12,14 +16,14 @@ header {
   nav {
     display: flex;
     gap: 1.5rem;
+  }
 
-    a {
-      color: var(--text-color);
-      text-decoration: inherit;
+  a {
+    color: var(--text-color);
+    text-decoration: inherit;
 
-      &:hover {
-        color: var(--primary-color);
-      }
+    &:hover {
+      color: var(--primary-color);
     }
   }
 

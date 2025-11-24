@@ -3,9 +3,14 @@
 @use "./body";
 @use "./color";
 @use "./footer";
+@use "./color";
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  border-color: var(--background-color);
 }
