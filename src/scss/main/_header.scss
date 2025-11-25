@@ -1,4 +1,4 @@
-@use "./common";
+@use "../common";
 
 header {
   border-bottom: solid 1px var(--border-color);
@@ -9,10 +9,7 @@ header {
 
   h3 {
     margin: 0px;
-    @include common.fontStyle(1.25rem, 700, 1.25rem);
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.75rem;
+    @include common.fontStyle(1.25rem, 700, 1.75rem);
     color: var(--primary-color);
   }
 
