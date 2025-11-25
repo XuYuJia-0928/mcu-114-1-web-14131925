@@ -1,3 +1,5 @@
+@use "./common";
+
 header {
   border-bottom: solid 1px var(--border-color);
   background-color: var(--background=color);
@@ -7,6 +9,7 @@ header {
 
   h3 {
     margin: 0px;
+    @include common.fontStyle(1.25rem, 700, 1.25rem);
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.75rem;
@@ -51,10 +54,8 @@ header {
       button {
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
-        padding: 0.5rem;
-        border: none;
         background-color: var(--gray-color-100);
-        cursor: pointer;
+        @include common.buttonStyle;
       }
     }
   }
