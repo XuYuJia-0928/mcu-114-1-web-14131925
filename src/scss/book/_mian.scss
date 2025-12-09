@@ -25,16 +25,32 @@ section {
     padding-right: var(--container-padding-right);
 
     > div {
-      outline: solid 1px red;
       padding-block: 4rem;
-    }
 
-    &.home {
-      height: 100vh;
-    }
+      &.home {
+        height: 100vh;
+      }
 
-    &.page {
-      min-height: 700px;
+      &.page {
+        outline: solid 1px red;
+        min-height: 700px;
+
+        div {
+          &.title {
+            margin-top: 1.5rem;
+            text-align: center;
+
+            h2 {
+              margin: 0;
+              margin-bottom: 0.5rem;
+            }
+
+            strong {
+              color: var(--gray-color-500);
+            }
+          }
+        }
+      }
     }
   }
 }
