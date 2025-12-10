@@ -49,19 +49,17 @@ header {
       }
 
       button {
+        @include common.buttonStyle;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         background-color: var(--gray-color-100);
-        @include common.buttonStyle;
       }
     }
   }
 
   button {
+    @include common.buttonStyle;
     border-color: transparent;
-    padding: 0.5rem;
-    border: none;
-    cursor: pointer;
     color: var(--text-color);
   }
 }
